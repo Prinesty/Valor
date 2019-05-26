@@ -1,0 +1,153 @@
+/* Standard Styling Throughout Page */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Delius", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Montaga";
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Heading Styling */
+header {
+  color: white;
+  width: 100%;
+  background-image: url("../images/Rene Osibo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+/*Nav Styling */
+.hamburger {
+    position: fixed;
+    padding: 20px 10px;
+    width: 25px;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 600;
+    height: 18px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hamburger div:nth-child(2) {
+  top: 27px;
+}
+
+.hamburger div:nth-child(3) {
+  top: 34px;
+}
+
+.menu-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 1050px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 200ms ease-out 50ms;
+  margin-right: 2rem;
+  font-family: "Montaga";
+}
+
+nav a:hover {
+  color: 	#cd5c5c;
+}
+
+/* Enter */
+.login-button {
+  background-color: white;
+  color: red;
+  display: inline-block;
+  line-height: 1.2rem;
+  padding: 1rem 2rem;
+  transition: background-color 100ms ease-out 50ms;
+}
+
+.login-button:hover {
+  background-color: red;
+}
+
+.news a {
+  color: maroon;
+  text-decoration: none;
+  text-align: center;
+  transition: color 100ms ease-in 20ms;
+}
+
+.news a:hover {
+  color: white;
+}
+
+.entertainment {
+  display: inline-block;
+  float: right;
+  margin-top: 20rem;
+  margin-right: 2rem;
+}
+
+.news {
+  display: inline-block;
+  margin-top: 25rem;
+  margin-left: 2rem;
+}
+
+.news h3 {
+  margin: 1rem 0;
+}
+
+.news h3 {
+
+}
