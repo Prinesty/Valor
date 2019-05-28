@@ -51,7 +51,6 @@ p {
   justify-content: flex-start;
 }
 
-
 /* Heading Styling */
 header {
   color: white;
@@ -290,4 +289,50 @@ nav a:hover {
   opacity: 0.5;
   font-size: 1rem;
   text-align: center;
+}
+
+/* Defining Container */
+.defining-container {
+  display: inline;
+}
+.defining-container .title {
+  color: #639eff;
+  transition: color 500ms ease-out;
+}
+
+.defining-container .title:hover {
+  color: #306acc;
+}
+
+.defining-container .story {
+  position: fixed;
+  z-index: 10;
+  bottom: -500%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background-color: firebrick;
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-size: 1.5rem;
+  transition: top 400ms ease-out 400ms, opacity 500ms ease-in-out 250ms;
+}
+
+.defining-container:hover .story {
+  bottom: 0;
+  opacity: 1;
+}
+
+.story h4 {
+  font-weight: 700;
+  font-family: "Montaga", cursive;
+}
+
+.story p {
+  font-weight: 700;
+  font-style: oblique;
+  text-align: left;
+  margin-left: 5rem;
+  margin-top: 1rem;
 }
