@@ -81,23 +81,23 @@ header {
 
 /*Nav Styling */
 .hamburger {
-    position: fixed;
-    padding: 20px 10px;
-    width: 25px;
-    top: 10px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 600;
-    height: 18px;
+  position: fixed;
+  padding: 20px 10px;
+  width: 25px;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 600;
+  height: 18px;
 }
 
 .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    top: 20px;
-    left: 50%;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 50%;
 }
 
 .hamburger div:nth-child(2) {
@@ -117,18 +117,14 @@ header {
   height: 20rem;
   padding: 0.2rem 4rem 2rem 4rem;
   background-color: firebrick;
-  opacity: 0.7;
+  opacity: 1;
   font-size: 1.5rem;
-  transition: top 400ms ease-out 400ms;
+  transition: top 100ms ease-out 50ms;
 }
 
 .navigation:hover .menu {
   top: 0;
   opacity: 1;
-}
-
-nav li {
-  display: inline;
 }
 
 nav a {
@@ -359,6 +355,10 @@ nav a:hover {
 /*Footer*/
 footer {
   margin: 1rem 2rem 0 2rem;
+}
+
+#footer {
+  color: black;
 }
 
 footer span {
