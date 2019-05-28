@@ -103,10 +103,23 @@ header {
   top: 34px;
 }
 
-nav {
+.navigation .menu {
   position: fixed;
-  top: 20px;
-  left: 1000px;
+  z-index: 1;
+  top: -100%;
+  left: 0;
+  width: 20%;
+  height: 20rem;
+  padding: 0.2rem 4rem 2rem 4rem;
+  background-color: firebrick;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  transition: top 400ms ease-out 400ms;
+}
+
+.navigation:hover .menu {
+  top: 0;
+  opacity: 1;
 }
 
 nav li {
@@ -118,6 +131,7 @@ nav a {
   transition: color 50ms ease 20ms;
   margin-right: 2rem;
   font-family: "Montaga", sans-serif;
+  line-height: 3;
 }
 
 nav a:hover {
@@ -295,6 +309,7 @@ nav a:hover {
 .defining-container {
   display: inline;
 }
+
 .defining-container .title {
   color: #639eff;
   transition: color 500ms ease-out;
@@ -316,7 +331,7 @@ nav a:hover {
   box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
   opacity: 0;
   font-size: 1.5rem;
-  transition: top 400ms ease-out 400ms, opacity 500ms ease-in-out 250ms;
+  transition: bottom 400ms ease-out 400ms, opacity 500ms ease-in-out 250ms;
 }
 
 .defining-container:hover .story {
