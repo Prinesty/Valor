@@ -29,7 +29,6 @@ h3 {
 h4 {
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: "Montaga";
 }
 
 p {
@@ -38,7 +37,6 @@ p {
 }
 
 #news {
-  background-image: url("../images/header.png");
   color: white;
 }
 
@@ -106,19 +104,6 @@ header {
   top: 34px;
 }
 
-/*
-.menu-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 400;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffffff;
-}
-*/
-
 nav {
   position: fixed;
   top: 20px;
@@ -130,11 +115,10 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
   color: white;
-  transition: color 200ms ease-out 50ms;
+  transition: color 50ms ease 20ms;
   margin-right: 2rem;
-  font-family: "Montaga";
+  font-family: "Montaga", sans-serif;
 }
 
 nav a:hover {
@@ -144,26 +128,24 @@ nav a:hover {
 /* Enter */
 .login-button {
   background-color: white;
-  color: red;
+  color: firebrick;
   display: inline-block;
   line-height: 1.2rem;
   padding: 1rem 2rem;
-  transition: background-color 100ms ease-out 50ms;
+  transition: all 50ms ease-out 20ms;
 }
 
 .login-button:hover {
   background-color: red;
 }
 
-.news a {
-  color: maroon;
-  text-decoration: none;
-  text-align: center;
-  transition: color 100ms ease-in 20ms;
-}
-
 .news a:hover {
   color: white;
+}
+
+.news a {
+  color: maroon;
+  text-align: center;
 }
 
 .entertainment {
@@ -186,7 +168,8 @@ nav a:hover {
 /* Main-Content */
 .main-content {
   max-width: 100%;
-  margin-top: 5rem;
+  margin-top: 4rem;
+  background-color: chocolate;
 }
 
 .main-img img {
@@ -200,6 +183,11 @@ nav a:hover {
   font-weight: 700;
   font-size: 3rem;
   margin: 1rem 0;
+}
+
+.main-img h3 {
+  padding: 1rem 0;
+  letter-spacing: 3px;
 }
 
 .synopsis {
@@ -221,16 +209,7 @@ nav a:hover {
 }
 
 .learn .rate-button {
-  background-color: blue;
-  color: white;
-  line-height: 1.2rem;
-  padding: 1rem 2rem;
-  transition: background-color 100ms ease-out 50ms;
-  border-radius: 3px;
-}
-
-.sub .rate-button {
-  background-color: gray;
+  background-color: white;
   color: red;
   line-height: 1.2rem;
   padding: 1rem 2rem;
@@ -238,13 +217,27 @@ nav a:hover {
   border-radius: 3px;
 }
 
+.sub .rate-button {
+  background-color: red;
+  color: white;
+  line-height: 1.2rem;
+  padding: 1rem 2rem;
+  transition: background-color 100ms ease-out 50ms;
+  border-radius: 3px;
+}
+
 .rate-button:hover {
-  background-color: orange;
+  background-color: gray;
 }
 
 /* Gallery */
 .gallery {
-  background-color: rgba(63, 64, 63, 0.5);
+  background-color: black;
+}
+
+#gallery1 {
+  background-color: black;
+  margin: 0 3rem;
 }
 
 .drama-img img {
