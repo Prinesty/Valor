@@ -50,11 +50,7 @@ p {
 
 /* Heading Styling */
 #header {
-  width: 100%;
   background-image: url("../images/Rene Osibo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 40rem;
   color: white;
 }
@@ -104,11 +100,12 @@ p {
   z-index: 1;
   top: -100%;
   left: 0;
+  border-radius: 3px;
   width: 13%;
   height: 15rem;
   padding: 1rem 2rem;
   background-color: #efc056;;
-  transition: top 100ms ease-out 50ms;
+  transition: top 1s ease-out 300ms;
 }
 
 .navigation:hover .menu {
@@ -140,30 +137,22 @@ nav a:hover {
   background-color: #efc056;
 }
 
-.news a {
+.enter a {
   color: red;
   text-align: center;
 }
 
-.news a:hover {
+.enter a:hover {
   color: white;
 }
 
-.entertainment {
-  display: inline-block;
-  float: right;
-  margin-top: 20rem;
-  margin-right: 5rem;
+.enter {
+  margin: 25rem 7rem 0 7rem;
+  justify-content: space-between;
 }
 
-.news {
-  display: inline-block;
-  margin-top: 25rem;
-  margin-left: 7rem;
-}
-
-.news h3 {
-  margin: 1rem 0;
+.enter h3 {
+  margin: 1rem auto;
 }
 
 /*Footer*/
