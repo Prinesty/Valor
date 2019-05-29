@@ -32,18 +32,9 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
   line-height: 1.2;
 }
 
-#news {
-  color: white;
-}
-
-.main-container {
-  width: 100%;
-  margin: 0;
-}
 
 .flex-row {
   display: flex;
@@ -57,9 +48,8 @@ p {
   justify-content: flex-start;
 }
 
-
 /* Heading Styling */
-header {
+#header {
   width: 100%;
   background-image: url("../images/Rene Osibo.png");
   background-repeat: no-repeat;
@@ -70,14 +60,9 @@ header {
 }
 
 .header-news {
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: auto;
-  height: 4rem;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+  background-image: url("../images/valour productions.png");
+  background-color: #2d3c42;
+  height: 6rem;
 }
 
 /*Nav Styling */
@@ -88,26 +73,13 @@ header {
   top: 10px;
   left: 10px;
   cursor: pointer;
-  z-index: 600;
+  z-index: 1;
   height: 18px;
 }
 
-.logo {
-  text-align: center;
-  padding-top: 1rem;
-  font-size: 2.5rem;
-  height: 2rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  word-spacing: 1rem;
-}
-
-.logo h1 {
-font-family: fantasy;
-}
-
-h1 .red {
-  color: orange;
+.company-name img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .hamburger div {
@@ -132,34 +104,32 @@ h1 .red {
   z-index: 1;
   top: -100%;
   left: 0;
-  width: 18%;
+  width: 13%;
   height: 15rem;
-  padding: 1rem 4rem 1rem 4rem;
-  background-color: firebrick;
+  padding: 1rem 2rem;
+  background-color: #efc056;;
   transition: top 100ms ease-out 50ms;
 }
 
 .navigation:hover .menu {
   top: 0;
-  opacity: 1;
 }
 
 nav a {
-  color: white;
+  color: #2d3c42;
+  font-weight: 700;
   transition: color 50ms ease 20ms;
-  margin-right: 2.5rem;
   font-family: "Montaga", sans-serif;
   line-height: 3;
 }
 
 nav a:hover {
-  color: #cd5c5c;
+  color: red;
 }
 
 /* Enter */
 .login-button {
   background-color: white;
-  color: firebrick;
   display: inline-block;
   line-height: 1.2rem;
   padding: 1rem 2rem;
@@ -167,16 +137,16 @@ nav a:hover {
 }
 
 .login-button:hover {
-  background-color: red;
+  background-color: #efc056;
+}
+
+.news a {
+  color: red;
+  text-align: center;
 }
 
 .news a:hover {
   color: white;
-}
-
-.news a {
-  color: maroon;
-  text-align: center;
 }
 
 .entertainment {
@@ -184,47 +154,99 @@ nav a:hover {
   float: right;
   margin-top: 20rem;
   margin-right: 5rem;
-  color: white;
 }
 
 .news {
   display: inline-block;
   margin-top: 25rem;
   margin-left: 7rem;
-  color: white;
 }
 
 .news h3 {
   margin: 1rem 0;
 }
 
-/* Main-Content */
-.main-content {
+/*Footer*/
+footer {
+  margin: 1rem 2rem 0 2rem;
+  color: black;
+}
+
+footer .quicklinks {
+  margin: 2rem 5rem;
+  justify-content: space-between;
+}
+
+.quicklinks h3 {
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.quicklinks a {
+  padding-top: 0.5rem;
+}
+
+.quicklinks a:hover {
+  color: red;
+}
+
+footer span {
+  margin: 1rem 5rem;
+}
+
+footer .copy {
+  border-top: 1px solid #2d3c42;
+  padding-top: 1.5rem;
+  margin: 0 5rem;
+}
+
+.tc {
+  flex-grow: 1
+}
+
+.tc p {
+  padding-right: 1rem;
+}
+
+.social a {
+  margin-left: 1rem;
+}
+
+.social a:hover {
+  color: red;
+}
+
+footer p:hover {
+  color: red;
+}
+
+/* News-Content Styling */
+.news-content {
   max-width: 100%;
-  margin-top: 4rem;
-  background-color: black;
+  background-color: #efc056;
+  color: black;
 }
 
 .main-img img {
+  padding: 0 7rem;
   width: 100%;
-  height: 40rem;
+  height: 30rem;
 }
 
 .main-img h3 {
-  color: white;
   font-weight: 500;
   font-size: 2rem;
-  margin: 1rem 4rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Montaga", sans-serif;
 }
 
 .synopsis {
   margin: 1rem 0;
-  margin-left: 4rem;
+  margin-left: 7rem;
 }
 
 .synopsis h6 {
-  opacity: 0.5;
+  opacity: 0.7;
   margin-bottom: 2rem;
 }
 
@@ -238,7 +260,7 @@ nav a:hover {
 
 .learn .rate-button {
   background-color: white;
-  color: red;
+  color: black;
   line-height: 1.2rem;
   padding: 1rem 2rem;
   transition: background-color 100ms ease-out 50ms;
@@ -246,7 +268,7 @@ nav a:hover {
 }
 
 .sub .rate-button {
-  background-color: red;
+  background-color: #2d3c42;
   color: white;
   line-height: 1.2rem;
   padding: 1rem 2rem;
@@ -255,17 +277,18 @@ nav a:hover {
 }
 
 .rate-button:hover {
-  background-color: orange;
+  background-color: red;
 }
 
 /* Gallery */
 .gallery {
-  background-color: dimgray;
+  background-color: #dcdcdc;
+  color: black;
 }
 
 #gallery1 {
-  background-color: dimgray;
-  margin: 0 3rem;
+  background-color: #dcdcdc;
+  margin: 0 7rem;
 }
 
 .drama-img img {
@@ -280,22 +303,24 @@ nav a:hover {
 }
 
 .heading {
-  margin: 0 4rem;
+  margin: 0 7rem;
   padding: 2rem 0;
 }
 
 .heading h3 {
-  font-size: 2rem;
   flex-grow: 1;
+  font-weight: bolder;
+  font-family: "Montaga", sans-serif;
 }
 
 .heading a {
+  font-size: 1.2rem;
   color: red;
   transition: color 50ms ease-in 20ms;
 }
 
 .heading a:hover {
-  color: white;
+  color: black;
 }
 
 .flex-row .drama-box:nth-child(1n+2) {
@@ -315,8 +340,7 @@ nav a:hover {
 .drama-box p {
   font-weight: 100;
   margin: 0 3rem 0 1rem;
-  opacity: 0.5;
-  font-size: 1rem;
+  opacity: 0.8;
   text-align: center;
 }
 
@@ -326,7 +350,7 @@ nav a:hover {
 }
 
 .defining-container .title {
-  color: #639eff;
+  color: #2d3c42;
   transition: color 500ms ease-out;
 }
 
@@ -341,84 +365,32 @@ nav a:hover {
   left: 0;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.5rem 4rem 2rem 4rem;
-  background-color: firebrick;
-  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
-  opacity: 0;
+  padding: 0.5rem 7rem 2rem 7rem;
+  background-color: #2d3c42;
   font-size: 1.5rem;
-  transition: bottom 400ms ease-out 400ms, opacity 500ms ease-in-out 250ms;
+  transition: bottom 400ms ease-out 400ms;
 }
 
 .defining-container:hover .story {
   bottom: 0;
-  opacity: 1;
 }
 
 .story h4 {
-  font-weight: 500;
+  font-weight: 700;
+  color: white;
 }
 
 .story p {
-  font-weight: 700;
-  font-style: oblique;
+  color: #efc056;
+  font-size: 1rem;
   text-align: left;
-  margin-left: 5rem;
+  margin-left: 6rem;
   margin-top: 1rem;
-}
-
-/*Footer*/
-footer {
-  margin: 1rem 2rem 0 2rem;
-  color: black;
-}
-
-footer span {
-  margin: 1rem 5rem;
-}
-
-footer .copy {
-  border-top: 1px solid firebrick;
-  padding-top: 1.5rem;
-  margin: 0 4rem;
-}
-
-.tc {
-  flex-grow: 1
-}
-
-.social a {
-  margin-left: 1rem;
-}
-
-footer p {
-  margin-left: 1rem;
-}
-
-footer p:hover {
-  color: red;
-}
-
-footer .quicklinks {
-  margin: 2rem 5rem;
-  justify-content: space-between;
-}
-
-.quicklinks h3 {
-  padding-bottom: 0.5rem;
-}
-.quicklinks a {
-  padding-top: 0.5rem;
-}
-
-.quicklinks a:hover {
-  color: red;
 }
 
 /* About Valour Styling */
 .about-text {
-  color: black;
-  margin: 2rem 0;
-  background-color: silver;
+  background-color: #dcdcdc;
   padding-bottom: 2rem;
 }
 
@@ -427,7 +399,6 @@ footer .quicklinks {
   padding: 4rem 0 2rem 0;
   font-weight: bolder;
   font-family: "Montaga", sans-serif;
-  border-bottom: 1px solid black;
 }
 
 .about-text .content {
@@ -439,32 +410,120 @@ footer .quicklinks {
 }
 
 .content p span {
-  color: firebrick;
+  color: red;
+  transition: color 50ms ease 10ms;
+}
+
+.content p span:hover {
+  color: black;
 }
 
 /* Team Styling */
 .team {
-  background-image: url("../images/Team.png");
-  height: 60rem;
-  margin-top: 4rem;
-  width: 100%;
+  background-color: #dcdcdc;
+  padding-bottom: 2rem;
 }
 
 .team h2 {
   text-align: center;
   padding: 3rem 0;
+  font-weight: bolder;
+  color: black;
+  font-family: "Montaga", sans-serif;
 }
 
 .team .members {
-  margin: 2rem 7rem;
+  margin: 1rem 7rem;
 }
 
-.person {
-  max-width: 33.3%;
-}
 .person img {
   width: 100%;
   height: auto;
-  padding-right: 2rem;
   padding-bottom: 0.5rem;
+}
+
+#persons2 {
+  margin-top: 2rem;
+}
+
+.person h5 {
+  padding-top: 0.5rem;
+  color: red;
+}
+
+.flex-row .person:nth-child(1n+2) {
+  margin-left: 2rem;
+}
+
+/* Entertainment Design */
+#foot {
+  background-color: #efc056;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.background {
+  margin: 4rem 7rem 2rem 7rem;
+}
+
+.e-image {
+  margin: 3rem 0;
+  padding-top: 2rem;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid #2d3c42;
+}
+
+.i-image {
+  margin-bottom: 1.5rem;
+}
+
+.i-video video {
+  width: 30%;
+  height: 12rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.i-video .info {
+  margin-top: 1.5rem;
+}
+
+.info h3 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+/* Connect With Us Styling */
+.connect {
+  background-color: #dcdcdc;
+}
+
+.connect h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 2rem 0;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Montaga", sans-serif;
+}
+
+.contacts {
+  margin: 2rem 7rem;
+}
+
+.contacts p {
+  line-height: 2;
+  padding-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+.contacts p a {
+  color: red;
+}
+
+.contacts p a:hover {
+  color: black
 }
