@@ -60,13 +60,13 @@ p {
 
 /* Heading Styling */
 header {
-  color: white;
   width: 100%;
   background-image: url("../images/Rene Osibo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 40rem;
+  color: white;
 }
 
 .header-news {
@@ -132,12 +132,10 @@ h1 .red {
   z-index: 1;
   top: -100%;
   left: 0;
-  width: 20%;
-  height: 20rem;
-  padding: 0.2rem 4rem 2rem 4rem;
+  width: 18%;
+  height: 15rem;
+  padding: 1rem 4rem 1rem 4rem;
   background-color: firebrick;
-  opacity: 1;
-  font-size: 1.5rem;
   transition: top 100ms ease-out 50ms;
 }
 
@@ -186,12 +184,14 @@ nav a:hover {
   float: right;
   margin-top: 20rem;
   margin-right: 5rem;
+  color: white;
 }
 
 .news {
   display: inline-block;
   margin-top: 25rem;
   margin-left: 7rem;
+  color: white;
 }
 
 .news h3 {
@@ -369,9 +369,6 @@ nav a:hover {
 /*Footer*/
 footer {
   margin: 1rem 2rem 0 2rem;
-}
-
-#footer {
   color: black;
 }
 
@@ -415,4 +412,59 @@ footer .quicklinks {
 
 .quicklinks a:hover {
   color: red;
+}
+
+/* About Valour Styling */
+.about-text {
+  color: black;
+  margin: 2rem 0;
+  background-color: silver;
+  padding-bottom: 2rem;
+}
+
+.about-text h2 {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  font-weight: bolder;
+  font-family: "Montaga", sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.about-text .content {
+  margin: 2rem 7rem;
+}
+
+.content p {
+  line-height: 2;
+}
+
+.content p span {
+  color: firebrick;
+}
+
+/* Team Styling */
+.team {
+  background-image: url("../images/Team.png");
+  height: 60rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.team h2 {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.team .members {
+  margin: 2rem 7rem;
+}
+
+.person {
+  max-width: 33.3%;
+}
+.person img {
+  width: 100%;
+  height: auto;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
 }
