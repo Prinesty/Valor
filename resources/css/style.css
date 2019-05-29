@@ -426,13 +426,14 @@ footer p:hover {
 }
 
 .person img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding-bottom: 0.5rem;
 }
 
 #persons2 {
   margin-top: 2rem;
+  max-width: 65%
 }
 
 .person h5 {
